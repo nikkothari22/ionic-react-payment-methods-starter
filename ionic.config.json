@@ -1,0 +1,7 @@
+{
+  "name": "op-payment-demo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
