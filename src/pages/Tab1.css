@@ -7,6 +7,7 @@
     display: block;
     color: var(--ion-color-medium);
     font-size: 15px;
+    padding-bottom: 5px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

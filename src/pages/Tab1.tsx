@@ -163,7 +163,7 @@ const Tab1: React.FC = () => {
         {loading ? <p>Loading...</p> :
           error ? <p>Error</p> :
             paymentMethods.length === 0 ? <p>No items to show</p> :
-              <IonList className='ion-padding-top'>
+              <IonList className='ion-padding-vertical'>
                 {paymentMethods.map(payment => <PaymentMethodItem paymentMethod={payment} key={payment.id} deletePaymentItem={deletePaymentMethod} />)}
               </IonList>
         }
@@ -195,7 +195,7 @@ export const PaymentMethodItem = ({ paymentMethod, deletePaymentItem }: ItemProp
     })
   }
   if (paymentMethod.type === 'UPI') {
-    return <IonItemSliding >
+    return <IonItemSliding>
       <IonItem routerLink={`/payment-method/${paymentMethod.id}`}>
         <IonIcon src={UPIIcon} slot="start" size='small' />
         <IonLabel className='payment-item'>
@@ -220,7 +220,7 @@ export const PaymentMethodItem = ({ paymentMethod, deletePaymentItem }: ItemProp
       </IonLabel>
       {paymentMethod.isDefault &&
         <IonChip slot="end" color='primary'>
-          <IonLabel style={{ fontSize: '12px' }}>Default</IonLabel>
+          <IonLabel>Default</IonLabel>
         </IonChip>
       }
     </IonItem>
