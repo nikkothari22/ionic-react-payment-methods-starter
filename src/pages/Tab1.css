@@ -1,0 +1,17 @@
+.payment-item h4 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.payment-item-detail {
+    display: block;
+    color: var(--ion-color-medium);
+    font-size: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.add-popover {
+    --width: 300px;
+}
